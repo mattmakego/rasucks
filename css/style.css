@@ -586,7 +586,59 @@ p {
   color: var(--color-text-light);
 }
 
-/* --- Comparison Layout (BS Detector) --- */
+/* --- Three-Tier Layout (BS Detector) --- */
+.tier-section {
+  margin-bottom: 3rem;
+}
+
+.tier-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+}
+
+.tier-header h2 {
+  margin-bottom: 0;
+}
+
+.tier-header.tier-green {
+  border-bottom: 3px solid var(--color-legit-green);
+}
+
+.tier-header.tier-green h2 {
+  color: var(--color-legit-green);
+}
+
+.tier-header.tier-yellow {
+  border-bottom: 3px solid var(--color-warning-yellow);
+}
+
+.tier-header.tier-yellow h2 {
+  color: #b8860b;
+}
+
+.tier-header.tier-red {
+  border-bottom: 3px solid var(--color-bs-red);
+}
+
+.tier-header.tier-red h2 {
+  color: var(--color-bs-red);
+}
+
+.tier-subtitle {
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+  margin-bottom: 1.25rem;
+}
+
+.gray-card {
+  border-left: 4px solid var(--color-warning-yellow);
+  background: var(--color-warning-yellow-bg);
+}
+
+/* Legacy comparison support */
 .comparison {
   display: grid;
   grid-template-columns: 1fr 1fr;
